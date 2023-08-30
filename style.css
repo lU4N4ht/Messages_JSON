@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding-block: 2em;
+    background-color: #FFE4E1;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.app-container{
+    padding-block: 1em;
+    display: grid;
+    height: 55em;
+    width: 30em;
+    justify-content: center;
+    background-color: #F7F7F7;
+    border-radius: 2em;
+    box-shadow: 5px 1px 10px 1px #504f4f36;
+}
+.logo-area{
+    padding-inline: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+}
+.logo-area .logo-icon{
+    width: 2em;
+}
+.logo-area h2{
+    font-size: 1em;
+    color: #555555;
+}
+.logo-area .menu-icon{
+    width: 2em;
+}
+.nav-area{
+    background-color: #f2f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    width: 28em;
+    border-radius: 1em;
+    height: 4em;
+}
+.nav-buttons{
+    gap: 0.5em;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+h5{
+    font-size: 0.6em;
+}
+.icons-nav{
+    width: 2em;
+}
