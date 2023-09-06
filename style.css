@@ -13,6 +13,7 @@ body{
     align-items: center;
 }
 .app-container{
+    grid-template-rows: 100px 80px 0px;
     padding-block: 1em;
     display: grid;
     height: 55em;
@@ -29,15 +30,9 @@ body{
     align-items: center;
     height: 4em;
 }
-.logo-area .logo-icon{
-    width: 2em;
-}
 .logo-area h2{
     font-size: 1em;
     color: #555555;
-}
-.logo-area .menu-icon{
-    width: 2em;
 }
 .nav-area{
     background-color: #f2f1f1;
@@ -49,15 +44,34 @@ body{
     border-radius: 1em;
     height: 4em;
 }
-.nav-buttons{
+.nav-area .nav-buttons{
     gap: 0.5em;
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
-h5{
+.nav-buttons h5{
     font-size: 0.6em;
+    transition: .1s all ease;
 }
-.icons-nav{
-    width: 2em;
+.nav-buttons h5:hover{
+    color: #FFB3BA;
+    transform: translateY(-0.1em);
+}
+.search-area{
+    background-color: #f2f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    width: 28em;
+    height: 3em;
+    border-radius: 0.5em;
+}
+.search-area input{
+    border: 0.01em solid #7e7e7e;
+    height: 2em;
+    width: 18em;
+    border-radius: 0.5em;
 }
