@@ -13,7 +13,7 @@ body{
     align-items: center;
 }
 .app-container{
-    grid-template-rows: 100px 80px 0px;
+    grid-template-rows: 100px 80px 80px;
     padding-block: 1em;
     display: grid;
     height: 55em;
@@ -75,3 +75,36 @@ body{
     width: 18em;
     border-radius: 0.5em;
 }
+.card-conatiner{
+    display: grid;
+}
+.card{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    border: 2px solid #7e7e7e;
+    border-radius: 0.5em;
+    padding-inline: 0.5em;
+}
+.card img{
+    max-width: 3em;
+    height: 3em;
+    border-radius: 50%;
+}
+.text{
+    display: grid;
+    gap: 0.4em;
+}
+.text h2{
+   font-size: 1em; 
+}
+.text p{
+    font-size: 0.7em; 
+ }
+ .text h3{
+    text-align: center;
+    border-radius: 0.5em;
+    width: 8em;
+    background-color: #FFB3BA;
+    font-size: 0.8em; 
+ }
