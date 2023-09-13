@@ -1,9 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Montserrat', sans-serif;
     padding-block: 2em;
     background-color: #FFE4E1;
@@ -12,7 +13,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-.app-container{
+
+.app-container {
     grid-template-rows: 100px 80px 80px;
     padding-block: 1em;
     display: grid;
@@ -23,18 +25,24 @@ body{
     border-radius: 2em;
     box-shadow: 5px 1px 10px 1px #504f4f36;
 }
-.logo-area{
+
+.logo-area {
     padding-inline: 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 4em;
 }
-.logo-area h2{
+
+.logo-area h2 {
     font-size: 1em;
     color: #555555;
 }
-.nav-area{
+nav{
+    padding-left: 1em;
+}
+
+.nav-area {
     background-color: #f2f1f1;
     display: flex;
     justify-content: center;
@@ -44,22 +52,26 @@ body{
     border-radius: 1em;
     height: 4em;
 }
-.nav-area .nav-buttons{
+
+.nav-area .nav-buttons {
     gap: 0.5em;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
-.nav-buttons h5{
+
+.nav-buttons h5 {
     font-size: 0.6em;
     transition: .1s all ease;
 }
-.nav-buttons h5:hover{
+
+.nav-buttons h5:hover {
     color: #FFB3BA;
     transform: translateY(-0.1em);
 }
-.search-area{
+
+.search-area {
     background-color: #f2f1f1;
     display: flex;
     justify-content: center;
@@ -69,42 +81,85 @@ body{
     height: 3em;
     border-radius: 0.5em;
 }
-.search-area input{
+
+.search-area input {
     border: 0.01em solid #7e7e7e;
     height: 2em;
     width: 18em;
     border-radius: 0.5em;
 }
-.card-conatiner{
+
+.card-conatiner {
     display: grid;
+    overflow-y: scroll;
+    gap: 0.5em;
+    overflow-x: hidden;
 }
-.card{
+
+.card {
+    height: 5em;
     display: flex;
     align-items: center;
     gap: 1em;
-    border: 2px solid #7e7e7e;
+    border: 1px solid #bababa;
     border-radius: 0.5em;
     padding-inline: 0.5em;
+    cursor: pointer;
 }
-.card img{
+
+.card img {
     max-width: 3em;
     height: 3em;
     border-radius: 50%;
 }
-.text{
+
+.text {
     display: grid;
     gap: 0.4em;
+    width: 19em;
 }
-.text h2{
-   font-size: 1em; 
+
+.text h2 {
+    font-size: 1em;
 }
-.text p{
-    font-size: 0.7em; 
- }
- .text h3{
+
+.text p {
+    font-size: 0.7em;
+}
+
+.text h3 {
     text-align: center;
     border-radius: 0.5em;
-    width: 8em;
+    width: 9em;
     background-color: #FFB3BA;
-    font-size: 0.8em; 
- }
+    font-size: 0.8em;
+    color: #F7F7F7;
+    font-weight: 300;
+}
+
+.name-messagens {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    justify-content: space-between;
+}
+
+.messages-number {
+    background-color: #FFB3BA;
+    border-radius: 50%;
+    height: 1.4em;
+    width: 1.4em;
+    text-align: center;
+    color: #F7F7F7;
+    font-weight: 400;
+    padding-top: 0.1em;
+}
+
+h6 {
+    font-size: 0.5em;
+    padding-left: 8em;
+}
+
+.card .rede-social {
+    border-radius: 0%;
+}
